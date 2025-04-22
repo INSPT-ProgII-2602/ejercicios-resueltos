@@ -16,7 +16,7 @@ import java.util.ArrayList;
     add(Elemento) agrega al final
     add(index, Elemento) agrega en la posición index, corriendo lo demás un lugar a la derecha
     remove(index): Remueve por posicion, retorna el objeto borrado
-    remove(Elemento): Remueve por referencia, retorna bollean si pudo o no
+    remove(Elemento): Remueve por referencia, retorna boolean si pudo o no
     get(index): Devuelve el elemento en la posicion index.
     set(index, Elemento): Reemplaza al elemento en la posición index.
     size(): Retorna la cantidad de elementos de la lista

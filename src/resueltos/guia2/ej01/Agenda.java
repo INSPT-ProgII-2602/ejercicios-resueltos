@@ -22,7 +22,13 @@ public class Agenda {
     }    
     
     public void listarPersonas() {
-
+//        for (int i = 0; i < personas.size(); i++) {
+//            Persona p = personas.get(i); 
+//            System.out.println(p);
+//        }
+        for (Persona p : personas) {
+            System.out.println(p);
+        }
     }
 
     public Persona devolverUltimo() {
@@ -32,19 +38,31 @@ public class Agenda {
     }
 
     public Persona buscarPersona(String DNI) {
-
-        return null;
+        Persona pEncontrada = null;
+        int i = 0;
+        
+        while (i < cantPersonas() && !this.personas.get(i).mismoDni(DNI)) {
+            i++;
+        }
+        if (i < cantPersonas()) {
+            pEncontrada = this.personas.get(i);
+        }        
+        return pEncontrada;
 
     }
 
     public boolean agregarPersona(String DNI, String nombre, String apellido, Domicilio dom) {
-
-        return false;
+        Persona buscada = buscarPersona(DNI);
+        boolean sePudo = buscada == null;
+        if (sePudo) {
+            this.personas.add( new Persona(DNI, nombre, apellido, 0, dom) );
+        }        
+        return sePudo;
 
     }
 
     public Persona removerPersona(String DNI) {
-
+        
         return null;
 
     }

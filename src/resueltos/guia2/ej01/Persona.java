@@ -91,5 +91,9 @@ public class Persona {
     public String toString() {
         return "Persona{" + "DNI=" + DNI + ", nombre=" + nombre + ", apellido=" + apellido + ", anioDeNacimiento=" + anioDeNacimiento + ", domicilio=" + domicilio + '}';
     }
+
+    public boolean mismoDni(String otroDNI) {
+        return this.DNI.equals(otroDNI);
+    }
     
 }
