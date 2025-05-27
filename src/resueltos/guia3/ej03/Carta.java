@@ -9,15 +9,19 @@ public abstract class Carta {
     private boolean deFrente;
 
     public Carta() {
-        // Constructor a resolver...
+        this.deFrente = true;
     }
 
     public void darVuelta() {
-        // Método a resolver...
+        deFrente = !deFrente;
     }
 
     public void mostrar() {
-        // Método a resolver...
+        if (deFrente) {
+            // mostrar su contenido
+        } else {
+            // mostrar "**********"
+        }
     }
 
 }

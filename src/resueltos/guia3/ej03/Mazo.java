@@ -25,6 +25,13 @@ public class Mazo {
     }    
     
     /**
+     * Da vuelta todas las cartas
+     */
+    public void darVueltaTodas() {
+        
+    }
+    
+    /**
      * Retorna las primeras N cartas de un determinado palo en un nuevo ArrayList
      * @param tp El tipo de palo de las cartas a buscar y retornar
      * @param n El número de cartas a buscar y retornar
