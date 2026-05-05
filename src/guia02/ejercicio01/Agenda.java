@@ -10,8 +10,14 @@ public class Agenda {
 
     private ArrayList<Persona> personas;
 
+    public Agenda() {
+        this.personas = new ArrayList<>();
+    }   
+
     public void listarPersonas() {
-        // Método a resolver...
+        for (Persona persona : personas) {
+            System.out.println(persona);
+        }
     }
 
     public Persona devolverUltimo() {
@@ -19,8 +25,8 @@ public class Agenda {
         return null;
     }
 
-    public Persona buscarPersona(String string1) {
-        // Método a resolver...
+    public Persona buscarPersona(String DNI) {
+        
         return null;
     }
 

@@ -7,7 +7,8 @@ package guia02.ejercicio01;
 public class Principal {
 
     public static void main(String[] args) {
-        // Método a resolver...
+        Agenda a = new Agenda();
+        a.listarPersonas();
     }
 
 }
