@@ -1,4 +1,4 @@
-package paquete;
+package guia02.ejercicio01;
 
 import java.util.ArrayList;
 

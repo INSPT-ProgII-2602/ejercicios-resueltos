@@ -1,4 +1,4 @@
-package paquete;
+package guia02.ejercicio01;
 
 /**
 * Código generado por la app UXFtoJava by Charly Cimino
