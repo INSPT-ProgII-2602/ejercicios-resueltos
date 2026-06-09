@@ -1,0 +1,49 @@
+<diagram program="umletino" version="15.1"><zoom_level>14</zoom_level><element><id>UMLClass</id><coordinates><x>0</x><y>364</y><w>294</w><h>140</h></coordinates><panel_attributes>Insumo
+--
+-nombre: String
+-porcGanancia: double
+-precioLista: double
+--
++getMontoFacturacion(): double</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>0</x><y>70</y><w>294</w><h>126</h></coordinates><panel_attributes>&lt;&lt;enum&gt;&gt;
+Tipo
+--
+_+PERIFERICO_
+_+HARDWARE_
+_+LIMPIEZA_
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>126</x><y>182</y><w>70</w><h>210</h></coordinates><panel_attributes>lt=&lt;-
+m1=1
+-tipo</panel_attributes><additional_attributes>10;10;10;130</additional_attributes></element><element><id>UMLClass</id><coordinates><x>910</x><y>448</y><w>294</w><h>140</h></coordinates><panel_attributes>/Servicio/
+--
+- cantHoras: int
+--
+/+ getValorHora(): double/
++ getPrecio(): double
++ getMontoFacturacion(): double</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>770</x><y>658</y><w>266</w><h>98</h></coordinates><panel_attributes>ServicioDeArmado
+--
+_- VALOR_HORA: double = 250_
+--
++ getValorHora(): double</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>1078</x><y>658</y><w>252</w><h>182</h></coordinates><panel_attributes>ServicioDeReparacion
+--
+_- VALOR_HORA: double = 180_
+_- MIN_DIFIC : int = 3_
+_- INCR_DIF: double = 25_
+-dificultad: int
+--
++ getValorHora(): double
++ getPrecio(): double</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>924</x><y>574</y><w>70</w><h>112</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>30;10;10;60</additional_attributes></element><element><id>Relation</id><coordinates><x>1134</x><y>574</y><w>70</w><h>112</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;30;60</additional_attributes></element><element><id>UMLClass</id><coordinates><x>476</x><y>210</y><w>294</w><h>112</h></coordinates><panel_attributes>&lt;&lt;interface&gt;&gt;
+/Facturable/
+--
+_+IVA: double = 21_
+--
+/+getMontoFacturacion(): double/
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>756</x><y>308</y><w>266</w><h>168</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;10;170;100</additional_attributes></element><element><id>Relation</id><coordinates><x>280</x><y>294</y><w>224</w><h>168</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>140;10;10;100</additional_attributes></element><element><id>UMLClass</id><coordinates><x>462</x><y>0</y><w>294</w><h>98</h></coordinates><panel_attributes>Historial
+--
+--
++montoTotalFacturado(): double
++cantServiciosSimples(): int
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>602</x><y>84</y><w>140</w><h>154</h></coordinates><panel_attributes>lt=&lt;-
+m1=*
+-facturables</panel_attributes><additional_attributes>10;90;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>476</x><y>420</y><w>336</w><h>84</h></coordinates><panel_attributes>Matematica
+--
+--
+_+sumarPorcentaje(double,double): double_</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>798</x><y>462</y><w>140</w><h>42</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;10;80;10</additional_attributes></element><element><id>Relation</id><coordinates><x>280</x><y>462</y><w>224</w><h>42</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>140;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>560</x><y>490</y><w>546</w><h>350</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;10;10;230;370;230</additional_attributes></element><element><id>Relation</id><coordinates><x>742</x><y>28</y><w>546</w><h>644</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>370;440;370;10;10;10</additional_attributes></element></diagram>
